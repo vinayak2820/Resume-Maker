@@ -1,0 +1,54 @@
+<link type="text/css" rel="stylesheet" href="style.css" />
+<body>
+    <div id="container">
+    <h3>User Details</h3>
+    <label for="name">Name:</label>
+    <input type="text" id="name" />
+    <br />
+     <label for="email">Email:</label>
+    <input type="email" id="email" />
+    <br />
+     <label for="phone">Phone:</label>
+    <input type="tel" id="phone" />
+
+    <p>Qualifications: </p>
+    <div id="display_qua"></div>
+    <div id="qualifications">
+      <input type="text"  id="degree" placeholder="Degree"/>
+      <input type="text" id="course" placeholder="Course" />
+      <input type="number" id="year1" placeholder="Graduation Year From: " />
+      <input type="number" id="year2" placeholder="Graduation Year To: " />
+    </div>
+    <button id="add_qua"> add entry </button>
+
+    <p>Projects</p>
+    <div id="display_pro"></div>
+    <div id="projects">
+      <textarea placeholder="Title"  id="title" style="height: 30px"></textarea>
+      <textarea  placeholder="Description" id="desc" style="height: 50px"></textarea>
+      <textarea placeholder="skills"  id="skills" style="height: 50px"></textarea>
+    </div>
+    <button id="add_pro"> add entry </button>
+
+    <br>
+
+    <button id="submit" type="submit">Submit</button>
+    </div>
+
+
+    <div id="resume">
+      <h3>Hi, I'm</h3>
+      <h1 id="user_name"></h1>
+      <h2>Project(s): </h2>
+      <ul id="project_list">
+      </ul>
+      <h2>Qualification(s): </h2>
+      <ul id="qual_list">
+      </ul>
+      <h2>Contact:</h2>
+      <a type="email" id="email_link"></a>
+      <h3>Phone: <span id="contact_number"></span></h3>
+      <button id="back">Back</button>
+    </div>
+</body>
+<script src="index.js" ></script>
